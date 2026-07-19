@@ -1,0 +1,189 @@
+/* ===========================================================
+   The S.A.F.A.R.I. Protocol — safariprotocol.com
+   Shared stylesheet. Design language matched to the
+   12-Week Checklist / Starter Kit PDFs.
+   =========================================================== */
+:root{
+  --green:#1E4B43;
+  --green-d:#173B35;
+  --green-card:#2A5A50;
+  --cream:#F4EFE6;
+  --paper:#FBF8F2;
+  --orange:#D9822B;
+  --orange-soft:#E9A25C;
+  --ink:#26332F;
+  --mute:#6B7A75;
+  --line:#E4DED2;
+  --white:#ffffff;
+  --maxw:1080px;
+  --radius:14px;
+  --shadow:0 10px 30px rgba(23,59,53,.08);
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);
+  background:var(--paper);line-height:1.6;font-size:17px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--green);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+h1,h2,h3{line-height:1.2;color:var(--green);font-weight:800;margin:0 0 .5em}
+h1{font-size:2.5rem;letter-spacing:-.02em}
+h2{font-size:1.7rem;letter-spacing:-.01em}
+h3{font-size:1.2rem}
+p{margin:0 0 1rem}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.kicker{
+  font-size:.72rem;font-weight:800;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--orange);margin:0 0 .6rem;
+}
+.rule{height:3px;width:56px;background:var(--orange);border:0;border-radius:2px;margin:.2rem 0 1.4rem}
+
+/* ---------- Header ---------- */
+header.site{
+  position:sticky;top:0;z-index:50;background:rgba(251,248,242,.92);
+  backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;
+  max-width:var(--maxw);margin:0 auto;padding:14px 24px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--green);
+  font-size:1.02rem;letter-spacing:-.01em;white-space:nowrap}
+.brand:hover{text-decoration:none}
+.brand .mark{width:26px;height:26px;flex:0 0 26px}
+.nav-links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.nav-links a{color:var(--ink);font-size:.93rem;font-weight:600}
+.nav-links a:hover{color:var(--green);text-decoration:none}
+.nav-cta{background:var(--green);color:#fff !important;padding:9px 16px;border-radius:10px;
+  font-size:.9rem;font-weight:700}
+.nav-cta:hover{background:var(--green-d);text-decoration:none}
+.menu-btn{display:none;background:none;border:0;font-size:1.5rem;color:var(--green);cursor:pointer}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-block;padding:13px 24px;border-radius:12px;font-weight:700;
+  font-size:1rem;cursor:pointer;border:0;transition:transform .05s ease,background .2s}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+.btn-primary{background:var(--orange);color:#fff}
+.btn-primary:hover{background:#c4711f;color:#fff}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--green-d);color:#fff}
+.btn-ghost{background:transparent;color:var(--green);border:1.5px solid var(--green)}
+.btn-ghost:hover{background:var(--green);color:#fff}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:1.4rem}
+
+/* ---------- Hero ---------- */
+.hero{background:var(--green);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-120px;top:-120px;width:360px;height:360px;
+  background:var(--green-d);border-radius:50%;opacity:.6}
+.hero::after{content:"";position:absolute;right:40px;bottom:-140px;width:220px;height:220px;
+  background:var(--green-card);border-radius:50%}
+.hero .wrap{position:relative;z-index:2;padding:88px 24px 84px;max-width:900px}
+.hero .kicker{color:var(--orange-soft)}
+.hero h1{color:#fff;font-size:3rem;max-width:16ch}
+.hero p.lead{color:#E7EFEC;font-size:1.28rem;max-width:44ch;margin-top:1rem}
+
+/* ---------- Sections ---------- */
+section{padding:64px 0}
+section.alt{background:var(--cream)}
+.section-head{max-width:760px;margin-bottom:2rem}
+.section-head p{color:var(--mute);font-size:1.05rem}
+
+/* ---------- Compass grid ---------- */
+.compass{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cpoint{background:#fff;border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.cpoint .badge{width:34px;height:34px;border-radius:9px;background:var(--orange);color:#fff;
+  font-weight:800;display:flex;align-items:center;justify-content:center;font-size:1.05rem;margin-bottom:10px}
+.cpoint h3{margin:.1rem 0 .3rem;font-size:1.05rem}
+.cpoint p{margin:0;color:var(--mute);font-size:.92rem}
+
+/* ---------- Legs ---------- */
+.leg{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:22px 24px;border-left:4px solid var(--green);margin-bottom:16px}
+.leg .top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.leg h3{margin:.1rem 0}
+.leg .wks{color:var(--orange);font-weight:800;font-size:.85rem;white-space:nowrap}
+.leg p{margin:.5rem 0 0;color:var(--mute);font-size:.96rem}
+
+/* ---------- Cards / two-col ---------- */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:26px;
+  border-top:3px solid var(--orange)}
+.card h3{margin-top:.2rem}
+.card p{color:var(--mute);font-size:.97rem}
+
+/* ---------- Callout / quote ---------- */
+.callout{background:#EAF2EF;border-radius:var(--radius);padding:20px 24px;color:var(--green);
+  font-weight:600}
+.quote{background:#fff;border-left:4px solid var(--orange);border-radius:10px;padding:18px 22px;
+  box-shadow:var(--shadow);margin:0 0 14px}
+.quote em{color:var(--ink);font-size:1.05rem;font-style:italic}
+.quote cite{display:block;color:var(--mute);font-style:normal;font-weight:700;margin-top:.5rem;font-size:.9rem}
+
+/* ---------- List ---------- */
+ul.ticks{list-style:none;padding:0;margin:1rem 0}
+ul.ticks li{position:relative;padding-left:30px;margin-bottom:12px;color:var(--ink)}
+ul.ticks li::before{content:"";position:absolute;left:0;top:3px;width:18px;height:18px;
+  border-radius:5px;background:var(--green);}
+ul.ticks li::after{content:"";position:absolute;left:6px;top:7px;width:5px;height:9px;
+  border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+
+/* ---------- Form / capture ---------- */
+.capture{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:30px;max-width:520px}
+.capture label{display:block;font-weight:700;font-size:.85rem;color:var(--green);margin:12px 0 5px}
+.capture input{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;
+  font-size:1rem;font-family:inherit}
+.capture input:focus{outline:none;border-color:var(--orange)}
+.capture .fineprint{font-size:.82rem;color:var(--mute);margin-top:14px}
+.mc-embed-slot{margin-top:6px}
+
+/* ---------- Download strip / next steps ---------- */
+.nextgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.nextcard{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;
+  border-top:3px solid var(--orange)}
+.nextcard .kicker{margin-bottom:.3rem}
+.nextcard h3{font-size:1.1rem;margin:.1rem 0 .5rem}
+.nextcard p{color:var(--mute);font-size:.92rem;margin-bottom:.8rem}
+.nextcard .link{font-weight:800;color:var(--orange);font-size:.9rem}
+
+/* ---------- Book/App blocks ---------- */
+.bookrow{display:grid;grid-template-columns:220px 1fr;gap:28px;align-items:start}
+.bookrow img{border-radius:8px;box-shadow:0 14px 34px rgba(23,59,53,.22);transform:rotate(-2deg)}
+.placeholder-cover{width:100%;aspect-ratio:2/3;background:linear-gradient(135deg,var(--green),var(--green-card));
+  border-radius:8px;display:flex;align-items:center;justify-content:center;color:#cfe0db;
+  text-align:center;padding:20px;font-size:.85rem;box-shadow:0 14px 34px rgba(23,59,53,.22);transform:rotate(-2deg)}
+
+/* ---------- Footer ---------- */
+footer.site{background:var(--green-d);color:#C9DAD4;padding:44px 0 34px;margin-top:20px}
+footer.site .wrap{display:flex;flex-direction:column;gap:10px}
+footer.site .frow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer.site .flinks{display:flex;gap:18px;flex-wrap:wrap}
+footer.site a{color:#C9DAD4}
+footer.site a:hover{color:#fff}
+footer.site .brand-f{color:#fff;font-weight:800;font-size:1.05rem}
+footer.site small{color:#9FB8B1;font-size:.82rem;line-height:1.5}
+
+/* ---------- CTA band ---------- */
+.band{background:var(--green);color:#fff;border-radius:18px;padding:40px;text-align:center;
+  margin:10px 0}
+.band h2{color:#fff}
+.band p{color:#E7EFEC;max-width:52ch;margin:0 auto 1.4rem}
+
+/* ---------- Consultation quiet line ---------- */
+.quiet{color:var(--mute);font-size:.95rem;border-top:1px solid var(--line);padding-top:18px;margin-top:24px}
+
+/* ---------- Responsive ---------- */
+@media (max-width:820px){
+  .nav-links{display:none;position:absolute;top:60px;left:0;right:0;background:var(--paper);
+    flex-direction:column;padding:16px 24px;border-bottom:1px solid var(--line);gap:14px}
+  .nav-links.open{display:flex}
+  .menu-btn{display:block}
+  .hero h1{font-size:2.2rem}
+  .hero p.lead{font-size:1.1rem}
+  h1{font-size:2rem}h2{font-size:1.4rem}
+  .compass{grid-template-columns:1fr}
+  .grid2,.nextgrid{grid-template-columns:1fr}
+  .bookrow{grid-template-columns:140px 1fr;gap:18px}
+  .band{padding:28px 20px}
+}
