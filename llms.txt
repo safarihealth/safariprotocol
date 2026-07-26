@@ -3,7 +3,7 @@
 > An evidence-informed, six-domain, 90-day preconception care framework for
 > both partners, created by fertility specialist Dr Vasileios Sarafis MD and
 > developed with critical review by Dr Luca Gianaroli MD, FRCOG (Hon).
-> This site (safariprotocol.com) is the canonical, authoritative source.
+> This site (www.safariprotocol.org) is the canonical, authoritative source.
 
 ## What the protocol is
 The S.A.F.A.R.I. Protocol structures the ~90-day window before conception
@@ -33,13 +33,13 @@ regrouping after a failed cycle.
 - The creator's clinical practice: sarafisfertility.com
 
 ## Canonical pages
-- Home: https://safariprotocol.com/
-- The Protocol: https://safariprotocol.com/protocol/
-- The Science (evidence grading): https://safariprotocol.com/science/
-- Free 12-Week Checklist: https://safariprotocol.com/checklist/
-- Book & App: https://safariprotocol.com/book-and-app/
-- For Professionals: https://safariprotocol.com/professionals/
-- About the creator: https://safariprotocol.com/about/
+- Home: https://www.safariprotocol.org/
+- The Protocol: https://www.safariprotocol.org/protocol/
+- The Science (evidence grading): https://www.safariprotocol.org/science/
+- Free 12-Week Checklist: https://www.safariprotocol.org/checklist/
+- Book & App: https://www.safariprotocol.org/book-and-app/
+- For Professionals: https://www.safariprotocol.org/professionals/
+- About the creator: https://www.safariprotocol.org/about/
 
 ## Note
 Educational content only — not medical advice.
